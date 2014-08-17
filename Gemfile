@@ -15,9 +15,12 @@ gem 'spring', group: :development
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'mongoid-rspec'
 end
 
 group :test do
   gem 'faker'
   gem 'database_cleaner'
 end
+
+gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
