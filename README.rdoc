@@ -2,4 +2,4 @@
 
 We want to seperate events from the relational DB and use MongoDB.
 
-<img src="http://s27.postimg.org/5gxk0y0f7/clearlogin.png" />
+http://s27.postimg.org/5gxk0y0f7/clearlogin.png
