@@ -24,3 +24,4 @@ group :test do
 end
 
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
+gem 'useragent'
