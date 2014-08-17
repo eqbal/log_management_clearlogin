@@ -14,4 +14,9 @@ class EventLog
   field :latitude,    type: Float 
   field :longitude,   type: Float
   field :browser,     type: String
+
+  scope :recent,  -> { where(:created_at.gte => 1.month.ago) }
+  scope :action,  ->(a) { where(action: a)}
+  scope :browser, ->(b) { where(browser: b)}
+  scope :country, ->(c) { where(country: c)}
 end
