@@ -26,12 +26,12 @@ class FakeEvent
     @ip_address  = params.fetch(:ip_address, random_ip)
     @user_agent  = params.fetch(:user_agent, user_agent.to_s)
     @browser     = params.fetch(:browser, user_agent.browser)
-    @city        = Faker::Address.city
-    @state       = Faker::Address.state
-    @country     = Faker::Address.country
-    @postal_code = Faker::Address.postcode
-    @latitude    = Faker::Address.latitude
-    @longitude   = Faker::Address.longitude
+    @city        = params.fetch(:city, Faker::Address.city)
+    @state       = params.fetch(:state, Faker::Address.state)
+    @country     = params.fetch(:country, Faker::Address.country)
+    @postal_code = params.fetch(:postal_code, Faker::Address.postcode)
+    @latitude    = params.fetch(:latitude, Faker::Address.latitude)
+    @longitude   = params.fetch(:longitude, Faker::Address.longitude)
   end
 
   def to_h
